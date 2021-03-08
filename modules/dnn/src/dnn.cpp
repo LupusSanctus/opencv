@@ -93,6 +93,13 @@ static bool DNN_CHECK_NAN_INF = utils::getConfigurationParameterBool("OPENCV_DNN
 static bool DNN_CHECK_NAN_INF_DUMP = utils::getConfigurationParameterBool("OPENCV_DNN_CHECK_NAN_INF_DUMP", false);
 static bool DNN_CHECK_NAN_INF_RAISE_ERROR = utils::getConfigurationParameterBool("OPENCV_DNN_CHECK_NAN_INF_RAISE_ERROR", false);
 
+bool DNN_DIAGNOSTICS_RUN = false;
+
+void setDiagnosticsRun(bool enabled)
+{
+    DNN_DIAGNOSTICS_RUN = enabled;
+}
+
 using std::vector;
 using std::map;
 using std::make_pair;

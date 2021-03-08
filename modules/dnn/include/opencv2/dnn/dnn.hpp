@@ -100,6 +100,9 @@ CV__DNN_INLINE_NS_BEGIN
     CV_EXPORTS std::vector< std::pair<Backend, Target> > getAvailableBackends();
     CV_EXPORTS_W std::vector<Target> getAvailableTargets(dnn::Backend be);
 
+    // enable model diagnostics
+    CV_EXPORTS void setDiagnosticsRun(bool enabled);
+
     /** @brief This class provides all data needed to initialize layer.
      *
      * It includes dictionary with scalar params (which can be read by using Dict interface),
